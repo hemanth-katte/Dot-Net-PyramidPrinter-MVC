@@ -1,0 +1,34 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Pyramid Page";
+}
+@{
+    ViewBag.Title = "PyramidPage";
+}
+<div class="text-center">
+
+    <h1>@ViewData["Title"]</h1>
+
+
+    @foreach(string row in @ViewBag.Pyramid)
+    {
+        <h3>@Html.Raw(row)</h3>
+
+    }
+    <h1>the height of pyramid is @ViewBag.Pyramid.Count</h1>
+    @*<h1> Sil,vus plait </h1>*@
+
+</div>
+
+@*<h1>
+    the provided height is @ViewBag.Pyramid;
+</h1>*@
+
+
+
+
+
+
